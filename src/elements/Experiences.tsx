@@ -189,6 +189,7 @@ const Experiences = () => {
       {/* GRID */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-6 lg:px-12 mt-14">
         {filtered.map((exp :any , index) => (
+          
           <motion.div key={exp.id} 
           initial={{opacity:0 , y:55}}
           whileInView={{opacity:1 , y:0}}
@@ -202,7 +203,6 @@ const Experiences = () => {
                 loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-
               <div className="absolute inset-0 bg-gradient-to-t from-accent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700" />
 
               <div className="absolute bottom-5 left-5 right-5 text-white opacity-0 translate-y-6 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700">

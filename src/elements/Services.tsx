@@ -91,6 +91,7 @@ const Services = () => {
             <Button
               variant="link"
               className="p-0 mt-2 flex items-center gap-1 tracking-wider"
+              onClick={()=>document.getElementById('contact')?.scrollIntoView({behavior:"smooth"})}
             >
               {t("services.button")}
               <motion.div

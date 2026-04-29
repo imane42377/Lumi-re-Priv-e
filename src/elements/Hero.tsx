@@ -108,13 +108,16 @@ const Hero = () => {
             <Button
               className="px-3 py-5 mx-5 my-3"
               style={{ fontFamily: "'Georgia', sans-serif" }}
+              onClick={()=>document.getElementById("services")?.scrollIntoView({behavior:"smooth"})}
             >
               {t("hero.cta_primary")}
             </Button>
 
             <Button
+            
               className="bg-secondary text-accent hover:bg-muted px-3 py-5"
               style={{ fontFamily: "'Georgia', sans-serif" }}
+              onClick={()=>document.getElementById("contact")?.scrollIntoView({behavior:"smooth"})}
             >
               {t("hero.cta_secondary")}
             </Button>
