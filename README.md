@@ -20,7 +20,7 @@ A modern, elegant landing page built for a luxury concierge service based in Cas
 - Framer Motion
 
 ## 📸 Preview
-###Light Mode
+##Light Mode
 
 <img width="2873" height="1540" alt="Capture d&#39;écran 2026-04-29 113541" src="https://github.com/user-attachments/assets/63f06629-9948-491a-934b-e7ca1b3373d5" />
 
@@ -38,7 +38,16 @@ A modern, elegant landing page built for a luxury concierge service based in Cas
 
 <img width="2867" height="757" alt="Capture d&#39;écran 2026-04-29 113717" src="https://github.com/user-attachments/assets/74c3bb89-9529-4fa3-8239-1f1c0f4262be" />
 
-###Dark Mode
+##Dark 
+
+<img width="2879" height="1514" alt="Capture d&#39;écran 2026-04-29 114141" src="https://github.com/user-attachments/assets/76590277-3932-446f-8338-5578b31c6611" />
+<img width="2879" height="417" alt="Capture d&#39;écran 2026-04-29 114154" src="https://github.com/user-attachments/assets/a87f2624-58d0-46d0-abc2-d33b06f89d59" />
+<img width="2879" height="1381" alt="Capture d&#39;écran 2026-04-29 114209" src="https://github.com/user-attachments/assets/ecfa9f5e-3266-45b1-b82e-631c599c50c1" />
+<img width="2873" height="1414" alt="Capture d&#39;écran 2026-04-29 114224" src="https://github.com/user-attachments/assets/34d3fa76-11f8-4e4b-b51d-753780b7d4ee" />
+<img width="2878" height="1393" alt="Capture d&#39;écran 2026-04-29 114241" src="https://github.com/user-attachments/assets/c7debb32-4e11-4238-b2d1-c7206264d848" />
+<img width="2878" height="1413" alt="Capture d&#39;écran 2026-04-29 114254" src="https://github.com/user-attachments/assets/8b1eaf08-26c2-40dd-b972-fc4f112d2461" />
+<img width="2873" height="1015" alt="Capture d&#39;écran 2026-04-29 114305" src="https://github.com/user-attachments/assets/bf895263-499e-41f5-b0d7-03a99f1b25cf" />
+<img width="2878" height="730" alt="Capture d&#39;écran 2026-04-29 114314" src="https://github.com/user-attachments/assets/6c79d344-bfca-465c-976e-adc21aac3e50" />
 ## 🚀 Getting Started
 
 ```bash
