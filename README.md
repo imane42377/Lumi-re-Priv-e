@@ -20,7 +20,9 @@ A modern, elegant landing page built for a luxury concierge service based in Cas
 - Framer Motion
 
 ## 📸 Preview
+
 ##Light Mode
+
 
 <img width="2873" height="1540" alt="Capture d&#39;écran 2026-04-29 113541" src="https://github.com/user-attachments/assets/63f06629-9948-491a-934b-e7ca1b3373d5" />
 
@@ -38,7 +40,9 @@ A modern, elegant landing page built for a luxury concierge service based in Cas
 
 <img width="2867" height="757" alt="Capture d&#39;écran 2026-04-29 113717" src="https://github.com/user-attachments/assets/74c3bb89-9529-4fa3-8239-1f1c0f4262be" />
 
-##Dark 
+##Dark Mode
+
+
 
 <img width="2879" height="1514" alt="Capture d&#39;écran 2026-04-29 114141" src="https://github.com/user-attachments/assets/76590277-3932-446f-8338-5578b31c6611" />
 <img width="2879" height="417" alt="Capture d&#39;écran 2026-04-29 114154" src="https://github.com/user-attachments/assets/a87f2624-58d0-46d0-abc2-d33b06f89d59" />
