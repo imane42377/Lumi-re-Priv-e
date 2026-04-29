@@ -19,10 +19,15 @@ import wellness2 from "../assets/images/wellness2_pexels.jpg"
 import wellness3 from "../assets/images/wellness3_pexels.jpg"
 
 const Experiences = () => {
+  type ExperienceCategory = "dining" | "travel" | "events" | "wellness" | "all";
+  type Btn = {
+  id: number;
+  content: string;
+  value: ExperienceCategory;
+};
   const { t } = useTranslation()
-  const [selected, setSelected] = useState("dining")
-
-  const btns = [
+  const [selected, setSelected] = useState<ExperienceCategory>("dining");
+  const btns : Btn[] = [
     { id: 1, content: t("experiences.filters.all"), value: "all" },
     { id: 2, content: t("experiences.filters.dining"), value: "dining" },
     { id: 3, content: t("experiences.filters.travel"), value: "travel" },
@@ -121,7 +126,7 @@ const Experiences = () => {
   const filtered =
     selected === "all"
       ? allExperiences
-      : experiences[selected] || []
+      : experiences[selected as keyof typeof experiences] || []
 
   return (
     <section id="experiences" className="py-16 lg:py-24">

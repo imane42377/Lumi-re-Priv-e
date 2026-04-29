@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { CSSProperties } from "react";
 const Star = ({ filled } :any) => (
   <svg
     width="18"
@@ -163,25 +164,25 @@ const styles = {
     position: "relative",
     overflow: "hidden",
     padding: "48px 24px",
-  },
+  }as CSSProperties ,
   noiseBg: {
     position: "absolute" as const,
     inset: 0,
     backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E")`,
     opacity: 0.6,
     pointerEvents: "none",
-  },
+  }as CSSProperties ,
   wrapper: {
     maxWidth: 760,
     width: "100%",
     position: "relative",
     zIndex: 1,
-  },
+  } as CSSProperties,
   header: {
     textAlign: "center",
     fontFamily: "'Cormorant Garamond', serif",
     marginBottom: 48,
-  },
+  } as CSSProperties,
   eyebrow: {
     letterSpacing: "0.18em",
     fontSize: 11,
@@ -189,23 +190,23 @@ const styles = {
     fontFamily: "'Cormorant Garamond', serif",
     textTransform: "uppercase",
     margin: "0 0 16px",
-  },
+  } as CSSProperties ,
   title: {
     fontSize: "clamp(2.2rem, 5vw, 3.4rem)",
     fontWeight: 400,
     lineHeight: 1.18,
     color: "var(--foreground)",
     margin: 0,
-  },
+  } as CSSProperties,
   titleItalic: {
     fontStyle: "italic",
     color: "var(--accent)",
     fontFamily: "'Cormorant Garamond', serif",
-  },
+  } as CSSProperties,
   titleNormal: {
     fontStyle: "",
     fontFamily: "'Cormorant Garamond', serif",
-  },
+  } as CSSProperties,
   card: {
     background: "var(--muted)",
     borderRadius: 4,
@@ -213,15 +214,15 @@ const styles = {
     position: "relative",
     overflow: "hidden",
     padding: "0 0 36px",
-  },
+  } as CSSProperties,
   cardAccent: {
     height: 3,
     background: "linear-gradient(90deg, #8B1A2F 0%, #C9736F 50%, #e6a26a 100%)",
     width: "100%",
-  },
+  } as CSSProperties,
   cardInner: {
     padding: "40px 52px 0",
-  },
+  } as CSSProperties,
   quoteChar: {
     fontFamily: "'Georgia', serif",
     fontSize: 72,
@@ -231,17 +232,17 @@ const styles = {
     display: "block",
     userSelect: "none",
     letterSpacing: "-0.02em",
-  },
+  } as CSSProperties,
   cardBody: {
     display: "flex",
     flexDirection: "column",
     gap: 28,
-  },
+  }as CSSProperties,
   avatarSection: {
     display: "flex",
     alignItems: "center",
     gap: 18,
-  },
+  } as CSSProperties,
   avatarRing: {
     width: 68,
     height: 68,
@@ -249,7 +250,7 @@ const styles = {
     padding: 3,
     background: "linear-gradient(135deg, #8B1A2F, #C9736F)",
     flexShrink: 0,
-  },
+  } as CSSProperties,
   avatar: {
     width: "100%",
     height: "100%",
@@ -257,12 +258,12 @@ const styles = {
     objectFit: "cover",
     display: "block",
     background: "#F0EBE3",
-  },
+  } as CSSProperties,
   authorInfo: {
     display: "flex",
     flexDirection: "column",
     gap: 3,
-  },
+   } as CSSProperties,
   authorName: {
     fontSize: 15,
     fontWeight: 700,
@@ -270,14 +271,14 @@ const styles = {
     margin: 0,
     fontFamily: "'Georgia', serif",
     letterSpacing: "0.01em",
-  },
+  } as CSSProperties,
   authorRole: {
     fontSize: 13,
     color: "var(--muted-foreground)",
     margin: 0,
     fontFamily: "'Georgia', serif",
     fontStyle: "italic",
-  },
+  } as CSSProperties,
   quoteText: {
     fontSize: "clamp(1rem, 2vw, 1.2rem)",
     lineHeight: 1.78,
@@ -285,18 +286,18 @@ const styles = {
     margin: 0,
     fontFamily: "'Montserrat', serif",
     fontWeight: 400,
-  },
+  } as CSSProperties,
   stars: {
     display: "flex",
     gap: 4,
     alignItems: "center",
-  },
+  } as CSSProperties,
   dots: {
     display: "flex",
     gap: 10,
     justifyContent: "flex-start",
     padding: "32px 52px 0",
-  },
+  } as CSSProperties,
   dot: {
     width: 28,
     height: 3,
@@ -306,11 +307,11 @@ const styles = {
     cursor: "pointer",
     padding: 0,
     transition: "background 0.3s ease, width 0.3s ease",
-  },
+  } as CSSProperties,
   dotActive: {
     background: "var(--accent)",
     width: 44,
-  },
+  } as CSSProperties,
   floatEl1: {
     position: "absolute" as const,
     width: 180,
@@ -319,7 +320,7 @@ const styles = {
     top: -60,
     right: -40,
     pointerEvents: "none",
-  },
+  } as CSSProperties,
   floatEl2: {
     position: "absolute" as const,
     width: 120,
@@ -328,5 +329,5 @@ const styles = {
     bottom: 20,
     left: -30,
     pointerEvents: "none",
-  },
+  } as CSSProperties,
 };
