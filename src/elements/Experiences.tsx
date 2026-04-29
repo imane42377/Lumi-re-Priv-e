@@ -17,6 +17,7 @@ import event3 from "../assets/images/event3_pexels.jpg"
 import wellness1 from "../assets/images/welness1_pexels.jpg"
 import wellness2 from "../assets/images/wellness2_pexels.jpg"
 import wellness3 from "../assets/images/wellness3_pexels.jpg"
+import { motion } from "framer-motion";
 
 const Experiences = () => {
   type ExperienceCategory = "dining" | "travel" | "events" | "wellness" | "all";
@@ -132,14 +133,22 @@ const Experiences = () => {
     <section id="experiences" className="py-16 lg:py-24">
       {/* TITLE */}
       <div className="text-center px-6">
-        <p
+        <motion.p
+          initial={{opacity:0 , y:20}}
+          whileInView={{opacity:1 , y:0}}
+          viewport={{once:true}}
+          transition={{ duration:0.5 ,delay:0.4 }}
           className="text-accent uppercase tracking-[0.3em] text-xs lg:text-sm font-medium mb-4"
           style={{ fontFamily: "'Montserrat', sans-serif" }}
         >
           {t("experiences.tagline")}
-        </p>
+        </motion.p>
 
-        <h1
+        <motion.h1
+        initial={{opacity:0 , y:20}}
+          whileInView={{opacity:1 , y:0}}
+          viewport={{once:true}}
+          transition={{ duration:0.5 ,delay:0.4 }}
           className="text-3xl lg:text-5xl"
           style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
@@ -152,11 +161,16 @@ const Experiences = () => {
           <span className="text-accent italic pl-2">
             {t("experiences.titleEnd")}
           </span>
-        </h1>
+        </motion.h1>
       </div>
 
       {/* BUTTONS */}
-      <div className="flex flex-wrap justify-center gap-3 mt-10 px-6">
+      <motion.div 
+      initial={{opacity:0 , y:10}}
+      whileInView={{opacity:1 , y:0}}
+      viewport={{once:true}}
+      transition={{ duration:0.5 ,delay:0.6 }}
+      className="flex flex-wrap justify-center gap-3 mt-10 px-6">
         {btns.map((btn) => (
           <Button
             key={btn.id}
@@ -170,12 +184,17 @@ const Experiences = () => {
             {btn.content}
           </Button>
         ))}
-      </div>
+      </motion.div>
 
       {/* GRID */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-6 lg:px-12 mt-14">
-        {filtered.map((exp :any) => (
-          <div key={exp.id} className="group">
+        {filtered.map((exp :any , index) => (
+          <motion.div key={exp.id} 
+          initial={{opacity:0 , y:55}}
+          whileInView={{opacity:1 , y:0}}
+          viewport={{once:true }}
+          transition={{ duration:0.6,ease:"easeOut" ,delay:Math.min(index * 0.3,0.3)}}
+          className="group">
             <div className="relative overflow-hidden rounded-xl w-full h-[350px]">
               <img
                 src={exp.img}
@@ -206,7 +225,7 @@ const Experiences = () => {
                 {exp.description}
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

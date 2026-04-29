@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { CSSProperties } from "react";
+import { motion } from "framer-motion";
+
 const Star = ({ filled } :any) => (
   <svg
     width="18"
@@ -57,25 +59,39 @@ export default function Testimonials() {
       <div style={styles.wrapper}>
         {/* Header */}
         <div style={styles.header}>
-          <p
+          <motion.p
+          initial={{opacity:0 , y:20}}
+          whileInView={{opacity:1 , y:0}}
+          viewport={{once:true}}
+          transition={{ duration:0.5 ,delay:0.4 }}
             className="text-accent uppercase tracking-[0.3em] text-xs lg:text-sm font-medium mb-4"
             style={{ fontFamily: "'Montserrat',serif" }}
           >
             {t("testimonials.tagline")}
-          </p>
+          </motion.p>
 
-          <h1 style={styles.title}>
+          <motion.h1
+          initial={{opacity:0 , y:20}}
+          whileInView={{opacity:1 , y:0}}
+          viewport={{once:true}}
+          transition={{ duration:0.5 ,delay:0.6 }}
+          style={styles.title}>
             <em style={styles.titleItalic}>
               {t("testimonials.titleStart")}
             </em>{" "}
             <span style={styles.titleNormal}>
               {t("testimonials.titleEnd")}
             </span>
-          </h1>
+          </motion.h1>
         </div>
 
         {/* Card */}
-        <div style={styles.card}>
+        <motion.div 
+        initial={{opacity:0 , y:40}}
+          whileInView={{opacity:1 , y:0}}
+          viewport={{once:true}}
+          transition={{ duration:0.5 ,delay:0.8 }}
+        style={styles.card}>
           <div style={styles.cardAccent} />
 
           <div
@@ -145,7 +161,7 @@ export default function Testimonials() {
               />
             ))}
           </div>
-        </div>
+        </motion.div>
 
         <div style={styles.floatEl1} />
         <div style={styles.floatEl2} />

@@ -33,7 +33,7 @@ const Services = () => {
         initial={{opacity:0 , y:20}}
         whileInView={{opacity:1 , y:0}}
         viewport={{once:true}}
-        transition={{duration:0.4 , delay:0.2}}
+        transition={{duration:0.4 , delay:0.3}}
           className="flex tracking-[0.3em] font-medium uppercase lg:text-sm text-xs text-accent pb-6"
           style={{ fontFamily: "'Montserrat', sans-serif" }}
         >
@@ -44,15 +44,14 @@ const Services = () => {
          initial={{opacity:0 , y:20}}
         whileInView={{opacity:1 , y:0}}
         viewport={{once:true}}
-        transition={{duration:0.5 , delay:0.4}}
+        transition={{duration:0.5 , delay:0.5}}
           className="flex flex-wrap justify-center text-center text-foreground lg:text-5xl text-2xl font-normal"
           style={{ fontFamily: "'Cormorant Garamond', Georgia, sans-serif" }}
         >
           <span>{t("services.headline")}</span>
 
           <span
-            className="px-
-            2 italic text-accent"
+            className="px-2 italic text-accent"
             style={{ fontFamily: "'Georgia', sans-serif" }}
           >
             {t("services.headlineAccent")}
@@ -63,10 +62,15 @@ const Services = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {cards.map((card) => (
-          <div
+        {cards.map((card ,index) => (
+          <motion.div
+          initial={{opacity:0, y:45}}
+          whileInView={{opacity:1 , y:0}}
+        viewport={{once:true}}
+          whileHover={{y:-10 , transition:{duration:0.4 }}}
+          transition={{duration:0.5 , delay:index * 0.2, ease:"easeOut"}}
             key={card.id}
-            className="bg-muted border border-accent p-8 flex flex-col gap-4 transition-all duration-300 hover:-translate-y-1 rounded-lg"
+            className="bg-muted border border-accent p-8 flex flex-col gap-4 rounded-lg"
           >
             <div className="w-fit p-3 bg-accent text-primary">
               {card.icon}
@@ -79,16 +83,30 @@ const Services = () => {
             <p className="text-normal text-muted-foreground leading-relaxed">
               {card.description}
             </p>
-
+            <motion.div 
+            initial="rest"
+            animate="rest"
+            whileHover="hover"
+            >
             <Button
               variant="link"
               className="p-0 mt-2 flex items-center gap-1 tracking-wider"
             >
               {t("services.button")}
+              <motion.div
+              variants={{
+                rest:{x:0},
+                hover:{x:10},               
+              }}
+              transition={{duration:0.3}}
+              >
+                <ChevronRight size={16} />
+              </motion.div>
               
-              <ChevronRight size={16} />
             </Button>
-          </div>
+            </motion.div>
+          
+          </motion.div>
         ))}
       </div>
     </section>

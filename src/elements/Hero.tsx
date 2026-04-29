@@ -67,7 +67,7 @@ const Hero = () => {
           <motion.p
           initial={{opacity:0 ,x:-15}}
           animate={{opacity:1 , x:0}}
-          transition={{delay:0.2}}
+          transition={{delay:0.2 , ease:"easeOut"}}
             className="uppercase text-accent tracking-widest text-xs pb-5 lg:pb-10 font-medium lg:text-sm"
             style={{ fontFamily: '"Montserrat", sans-serif' }}
           >
@@ -77,7 +77,7 @@ const Hero = () => {
           <motion.h1
           initial={{opacity:0 ,x:-15}}
           animate={{opacity:1, x:1}}
-          transition={{delay:0.4}}
+          transition={{delay:0.4 , ease:"easeOut"}}
             className="text-5xl lg:text-7xl pb-5 lg:pb-10"
             style={{ fontFamily: '"Cormorant Garamond", sans-serif' }}
           >
@@ -93,7 +93,7 @@ const Hero = () => {
           <motion.p
           initial={{opacity:0 ,x:-15}}
           animate={{opacity:1 , x:0}}
-          transition={{delay:0.6}}            
+          transition={{delay:0.6 , ease:"easeOut"}}            
           className="pb-5 lg:pb-10"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
@@ -103,7 +103,7 @@ const Hero = () => {
           <motion.div
           initial={{opacity:0 ,x:-15}}
           animate={{opacity:1, x:0}}
-          transition={{delay:0.8}}
+          transition={{delay:0.8 , ease:"easeOut"}}
           >
             <Button
               className="px-3 py-5 mx-5 my-3"
@@ -123,9 +123,9 @@ const Hero = () => {
 
         {/* Right — image */}
         <motion.div 
-        initial={{opacity:0 , x:20}}
+        initial={{opacity:0 , x:40}}
         animate={{opacity:1 , x:0}}
-        transition={{duration:0.4 ,delay:0.5}}
+        transition={{duration:0.4 ,delay:0.5 , ease:"easeOut"}}
         className="relative p-3">
           <div className="absolute top-0 left-0 w-16 h-16 border-t-4 border-l-4 border-accent rounded-br-sm z-20 pointer-events-none" />
           <div className="absolute bottom-0 right-0 w-16 h-16 border-b-4 border-r-4 border-accent rounded-br-sm z-20 pointer-events-none" />
