@@ -9,7 +9,6 @@ import { ThemeProvider } from './context/theme-context'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    
       <BrowserRouter>
       <LanguageProvider>
         <ThemeProvider>
@@ -17,8 +16,5 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         </ThemeProvider>
          </LanguageProvider>
       </BrowserRouter>
-    
-   
-   
   </React.StrictMode>,
 )

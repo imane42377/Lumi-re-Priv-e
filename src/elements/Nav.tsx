@@ -127,7 +127,7 @@ const Nav = () => {
         }`}
       >
         <ul
-          className="flex flex-col items-center gap-6 py-8 bg-[#f5f2eb] border-t border-accent"
+          className="flex flex-col items-center gap-6 py-8 bg-background border-t border-accent"
           style={{ fontFamily: "'Montserrat', sans-serif" }}
         >
           {links.map((link) => (
@@ -144,7 +144,11 @@ const Nav = () => {
           ))}
           <li>
             <a
-              href="/#contact"
+              onClick={()=>{
+                document.getElementById("contact")?.scrollIntoView({behavior:"smooth"})
+              setMenuOpen(false)
+            }
+              }
               className="text-[9px] font-medium tracking-[0.35em] uppercase bg-accent text-[#f5f2eb] px-8 py-3 hover:bg-accent transition-colors duration-300"
             >
               {t("nav.cta")}
