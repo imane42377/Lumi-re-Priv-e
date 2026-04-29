@@ -1,0 +1,191 @@
+{
+    
+  "hero": {
+    "tagline": "Conciergerie de Luxe à Casablanca depuis — 2011",
+    "headline": "Votre Vie, Sublimée",
+    "headline_accent": "Parfaitement.",
+    "description": "Du dîner privé aux événements exclusifs et transferts sans faille — nous gérons chaque détail pour que vous n'ayez pas à le faire. Discret, raffiné, toujours disponible.",
+    "cta_primary": "Découvrir Nos Services",
+    "cta_secondary": "Planifier une consultation initiale",
+    "stats": {
+      "availability": "Disponibilité",
+      "experience": "Ans d'Expérience",
+      "client": "Expérience Client",
+      "concierges": "Concierges Dédiés"
+    }
+  },
+   "nav": {
+    "links": {
+      "services": "Services",
+      "experiences": "Expériences",
+      "testimonials": "Témoignages",
+      "about": "À Propos",
+      "contact": "Contact"
+    },
+    "cta": "Demander l'Accès"
+  } ,
+  "services": {
+  "tagline": "Nos Services",
+  "headline": "Réservé aux",
+  "headlineAccent": "vies extraordinaires",
+  "headlineEnd": "",
+  "button": "En savoir plus",
+  "cards": [
+    {
+      "title": "Gastronomie d’Exception",
+      "description": "Des restaurants étoilés Michelin aux dîners privés — des instants conçus pour le goût, l’ambiance et des occasions inoubliables."
+    },
+    {
+      "title": "Voyages Sur Mesure",
+      "description": "Jets privés et villas exclusives définissent des voyages entièrement pensés autour de votre style de vie. Soigneusement organisés et parfaitement exécutés."
+    },
+    {
+      "title": "Accès Exclusif",
+      "description": "Événements complets et expériences sur invitation deviennent accessibles sans effort — où l’exclusivité devient votre privilège."
+    }
+  ]
+},
+"experiences": {
+  "tagline": "Expériences Sur Mesure",
+  "titleStart": "Moments",
+  "titleMiddle": "Que Nous Rendons",
+  "titleEnd": "Possibles",
+  "overlay": "Accès Exclusif",
+  "signature": "Expérience Signature",
+
+  "filters": {
+    "all": "Tous",
+    "dining": "Gastronomie",
+    "travel": "Voyage",
+    "events": "Événements",
+    "wellness": "Bien-être"
+  },
+
+  "cards": {
+    "dining": [
+      {
+        "title": "Dîner Privé sur Rooftop",
+        "description": "Une expérience gastronomique exclusive avec vue panoramique."
+      },
+      {
+        "title": "Chef à Domicile",
+        "description": "Une cuisine raffinée préparée chez vous."
+      },
+      {
+        "title": "Dîner au Coucher du Soleil en Yacht",
+        "description": "Un dîner luxueux en mer."
+      }
+    ],
+
+    "travel": [
+      {
+        "title": "Évasion en Jet Privé",
+        "description": "Voyagez sans compromis."
+      },
+      {
+        "title": "Retraite de Luxe dans le Désert",
+        "description": "Une escapade cinq étoiles au Sahara."
+      },
+      {
+        "title": "Week-end à Amalfi",
+        "description": "Escapades côtières organisées dans les moindres détails."
+      }
+    ],
+
+    "events": [
+      {
+        "title": "Accès VIP à la Fashion Week",
+        "description": "Invitations au premier rang et soirées privées."
+      },
+      {
+        "title": "Gala d’Anniversaire Sur Mesure",
+        "description": "Des célébrations conçues au-delà de l’imagination."
+      },
+      {
+        "title": "Soirée Privée en Villa",
+        "description": "Réunions élégantes dans des lieux exceptionnels."
+      }
+    ],
+
+    "wellness": [
+      {
+        "title": "Retraite Spa de Luxe",
+        "description": "Un sanctuaire de calme réservé uniquement pour vous."
+      },
+      {
+        "title": "Coaching Performance Personnel",
+        "description": "Des experts bien-être adaptés à votre style de vie."
+      },
+      {
+        "title": "Yoga Privé au Bord de la Mer",
+        "description": "Le luxe conscient dans un cadre spectaculaire."
+      }
+    ]
+  }
+},
+"testimonials": {
+  "tagline": "TÉMOIGNAGES DE NOS CLIENTS",
+  "titleStart": "Les voix de",
+  "titleEnd": "ceux que nous servons",
+
+  "items": [
+    {
+      "quote": "Un seul appel, et tout a été organisé — un dîner privé sur rooftop avec vue sur Casablanca et un service irréprochable.",
+      "name": "Karim El Fassi",
+      "role": "Directeur Général, Casablanca",
+      "rating": 5,
+      "avatar": "https://api.dicebear.com/9.x/notionists/svg?seed=Henrik&backgroundColor=b5ead7"
+    },
+    {
+      "quote": "D’un jet privé de dernière minute à une villa à Marrakech préparée selon nos goûts exacts — tout en moins de quatre heures.",
+      "name": "Sophia Renard",
+      "role": "Dirigeante, Paris & Casablanca",
+      "rating": 5,
+      "avatar": "https://api.dicebear.com/9.x/notionists/svg?seed=Sophia&backgroundColor=ffdac1"
+    },
+    {
+      "quote": "Ils ont obtenu un accès à un dîner sur invitation que l’on m’avait dit complet.",
+      "name": "Marcus Al-Rashid",
+      "role": "Entrepreneur, Dubaï & Casablanca",
+      "rating": 5,
+      "avatar": "https://api.dicebear.com/9.x/notionists/svg?seed=Marcus&backgroundColor=c7ceea"
+    }
+  ]
+},
+"about": {
+  "tagline": "À Propos de Lumière Privée",
+  "titleStart": "L'Élégance",
+  "titleMiddle": "façonnée à la",
+  "titleEnd": "perfection.",
+  "description1": "Depuis 2011, Lumière Privée est la force discrète derrière les moments les plus mémorables de la vie de ses clients. Nous ne sommes pas un service — nous sommes une référence fondée sur la confiance, la discrétion absolue et le goût de l’exception.",
+  "description2": "Basée à Casablanca et connectée au monde entier, notre équipe de douze concierges dédiés travaille jour et nuit afin que chaque demande — discrète ou complexe — soit traitée avec le même calme et la même précision.",
+
+  "stats": {
+    "availability": "Disponibilité 24/7",
+    "experience": "16+ Ans d’Expérience",
+    "client": "Expérience Client VIP",
+    "concierges": "12 Concierges Dédiés"
+  }
+},
+"contact": {
+  "titleLine1": "Créons quelque chose",
+  "titleLine2": "d’exception",
+  "titleAccent": "ensemble",
+  "subtitle": "Dites-nous ce que vous imaginez — nous nous occupons du reste, avec fluidité et discrétion.",
+  "ctaPrimary": "Commencer une Conversation",
+  "ctaSecondary": "Parler avec Nous",
+  "location": "Settat, Maroc"
+},
+"footer": {
+  "tagline": "Conciergerie Lifestyle Premium.",
+  "description": "Nous proposons des services de conciergerie discrets et haut de gamme conçus pour simplifier votre vie et sublimer vos expériences — du dîner privé aux voyages sur mesure, en passant par l’accès exclusif et l’assistance 24h/24.",
+  "contact": "Contact",
+  "location": "Settat, Maroc",
+  "hours": "Lun–Ven : 09:00–17:30",
+  "social": "Réseaux",
+  "rights": "Tous droits réservés.",
+  "imprint": "Mentions légales",
+  "privacy": "Politique de confidentialité"
+}
+
+}
