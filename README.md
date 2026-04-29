@@ -52,8 +52,6 @@ A modern, elegant landing page built for a luxury concierge service based in Cas
 <img width="2878" height="1413" alt="Capture d&#39;écran 2026-04-29 114254" src="https://github.com/user-attachments/assets/8b1eaf08-26c2-40dd-b972-fc4f112d2461" />
 <img width="2873" height="1015" alt="Capture d&#39;écran 2026-04-29 114305" src="https://github.com/user-attachments/assets/bf895263-499e-41f5-b0d7-03a99f1b25cf" />
 <img width="2878" height="730" alt="Capture d&#39;écran 2026-04-29 114314" src="https://github.com/user-attachments/assets/6c79d344-bfca-465c-976e-adc21aac3e50" />
-## 🚀 Getting Started
+## 🚀  Live Demo
 
-```bash
-npm install
-npm run dev
+https://lumi-re-priv-e-xn4b.vercel.app/
