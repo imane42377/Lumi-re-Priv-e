@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-
-const Star = ({ filled }) => (
+const Star = ({ filled } :any) => (
   <svg
     width="18"
     height="18"
@@ -20,13 +19,13 @@ export default function Testimonials() {
 
   const testimonials = t("testimonials.items", {
     returnObjects: true,
-  });
+  }) as any [];
 
   const [active, setActive] = useState(0);
   const [animating, setAnimating] = useState(false);
   const [visible, setVisible] = useState(true);
 
-  const goTo = (index) => {
+  const goTo = (index : any) => {
     if (index === active || animating) return;
 
     setAnimating(true);
@@ -131,7 +130,7 @@ export default function Testimonials() {
 
           {/* Dots */}
           <div style={styles.dots}>
-            {testimonials.map((_, i) => (
+            {testimonials.map((_ : any, i:any) => (
               <button
                 key={i}
                 onClick={() => goTo(i)}
@@ -166,7 +165,7 @@ const styles = {
     padding: "48px 24px",
   },
   noiseBg: {
-    position: "absolute",
+    position: "absolute" as const,
     inset: 0,
     backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E")`,
     opacity: 0.6,
@@ -313,7 +312,7 @@ const styles = {
     width: 44,
   },
   floatEl1: {
-    position: "absolute",
+    position: "absolute" as const,
     width: 180,
     height: 180,
     borderRadius: "50%",
@@ -322,7 +321,7 @@ const styles = {
     pointerEvents: "none",
   },
   floatEl2: {
-    position: "absolute",
+    position: "absolute" as const,
     width: 120,
     height: 120,
     borderRadius: "50%",

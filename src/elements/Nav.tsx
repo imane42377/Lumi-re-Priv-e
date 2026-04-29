@@ -133,7 +133,8 @@ const Nav = () => {
           {links.map((link) => (
             <li key={link.key}>
               <a
-                href={`#${link.key.toLowerCase().replace(/\s+/g, "-")}`}
+                href={`#${link.key
+                  .toLowerCase().replace(/\s+/g, "-")}`}
                 onClick={() => setMenuOpen(false)}
                 className="text-[10px] tracking-[0.35em] uppercase text-[#7a7060] hover:text-accent transition-colors duration-300"
               >

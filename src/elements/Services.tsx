@@ -51,7 +51,8 @@ const Services = () => {
           <span>{t("services.headline")}</span>
 
           <span
-            className="px-2 italic text-accent"
+            className="px-
+            2 italic text-accent"
             style={{ fontFamily: "'Georgia', sans-serif" }}
           >
             {t("services.headlineAccent")}

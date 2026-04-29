@@ -169,7 +169,7 @@ const Experiences = () => {
 
       {/* GRID */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-6 lg:px-12 mt-14">
-        {filtered.map((exp) => (
+        {filtered.map((exp :any) => (
           <div key={exp.id} className="group">
             <div className="relative overflow-hidden rounded-xl w-full h-[350px]">
               <img
